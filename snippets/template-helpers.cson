@@ -1,0 +1,249 @@
+'.text.html.htmlbars':
+  'Ember {{action}} Helper':
+    'prefix': 'action'
+    'description': 'action()'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_action'
+    'body': """
+      {{action "${1:actionName}"$2}}
+    """
+
+  'Ember (action) Helper':
+    'prefix': 'action-nested'
+    'description': 'action()'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_action'
+    'body': """
+      (action "${1:actionName}"$2)
+    """
+
+  'Ember {{component}} Helper':
+    'prefix': 'component'
+    'description': 'component()'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_component'
+    'body': """
+      {{component ${1:componentName}$2}}
+    """
+
+  'Ember (component) Helper':
+    'prefix': 'component-nested'
+    'description': 'component()'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_component'
+    'body': """
+      (component ${1:componentName}$2)
+    """
+
+  'Ember (concat) Helper':
+    'prefix': 'concat'
+    'description': 'concat()'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_concat'
+    'body': """
+      (concat $1)
+    """
+
+  'Ember {{debugger}} Helper':
+    'prefix': 'debugger'
+    'description': 'debugger()'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_debugger'
+    'body': """
+      {{debugger}}
+    """
+
+  'Ember {{each}} Helper':
+    'prefix': 'each'
+    'description': 'each()'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_each'
+    'body': """
+      {{#each ${1:collection} as |${2:element}|}}
+        $3
+      {{/each}}
+    """
+
+  'Ember {{each-in}} Helper':
+    'prefix': 'each-in'
+    'description': 'eachIn()'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_each-in'
+    'body': """
+      {{#each-in ${1:object} as |${2:key} ${3:value}|}}
+        $4
+      {{/each}}
+    """
+
+  'Ember {{get}} Helper':
+    'prefix': 'get'
+    'description': 'get(object, key)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_get'
+    'body': """
+      {{get ${1:object} ${2:"${3:key}"}}}
+    """
+
+  'Ember (get) Helper':
+    'prefix': 'get-nested'
+    'description': 'get(object, key)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_get'
+    'body': """
+      (get ${1:object} ${2:"${3:key}"})
+    """
+
+  'Ember {{hash}} Helper':
+    'prefix': 'hash'
+    'description': 'hash(options)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_hash'
+    'body': """
+      {{hash ${1:key}=${2:"${3:key}"$4}}}
+    """
+
+  'Ember (hash) Helper':
+    'prefix': 'hash-nested'
+    'description': 'hash(options)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_hash'
+    'body': """
+      (hash ${1:key}=${2:"${3:key}"$4})
+    """
+
+  'Ember Helper (if)':
+    'prefix': 'if'
+    'description': 'if(value)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_if'
+    'body': """
+      (if ${1:value} ${1:then})
+    """
+
+  'Ember Helper {{else}}':
+    'prefix': 'else'
+    'body': """
+      {{else}}
+        $1
+    """
+
+  'Ember Helper {{input}}':
+    'prefix': 'input'
+    'description': 'input(options)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_input'
+    'body': """
+      {{input value=${1:value}}}
+    """
+
+  'Ember Helper {{link-to}}':
+    'prefix': 'link-to'
+    'description': 'link-to(routeName, context, options)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_link-to'
+    'body': """
+      {{#link-to "${1:routeName}"}}
+        ${3:label}
+      {{/link-to}}
+    """
+
+  'Ember Helper {{loc}}':
+    'prefix': 'loc'
+    'description': 'loc(str)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_loc'
+    'body': """
+      {{loc "${1:string}"}}
+    """
+
+  'Ember Helper {{log}}':
+    'prefix': 'log'
+    'description': 'log(values)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_log'
+    'body': """
+      {{log ${1:values}}}
+    """
+
+  'Ember Helper {{mount}}':
+    'prefix': 'mount'
+    'description': 'mount(engineName)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_mount'
+    'body': """
+      {{mount "${1:engineName}"}}
+    """
+
+  'Ember Helper (mut)':
+    'prefix': 'mut'
+    'description': 'mut(attr)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_mut'
+    'body': """
+      (mut ${1:attr})
+    """
+
+  'Ember Helper {{outlet}}':
+    'prefix': 'outlet'
+    'description': 'outlet(name)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_outlet'
+    'body': """
+      {{outlet "${1:outletName}"}}
+    """
+
+  'Ember Helper {{partial}}':
+    'prefix': 'partial'
+    'description': 'partial(partialName)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_partial'
+    'body': """
+      {{partial "${1:partialName}"}}
+    """
+
+  'Ember Helper (query-params)':
+    'prefix': 'query-params'
+    'description': 'query-params(hash)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_query-params'
+    'body': """
+      (query-params ${1:key}=${2:"${3:key}"$4})
+    """
+
+  'Ember Helper {{render}}':
+    'prefix': 'render'
+    'description': 'render(name, context, options)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_render'
+    'body': """
+      {{render "${1:name}"}}
+    """
+
+  'Ember Helper {{textarea}}':
+    'prefix': 'textarea'
+    'description': 'textarea(options)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_textarea'
+    'body': """
+      {{textarea value=${1:value}}}
+    """
+
+  'Ember Helper {{unbound}}':
+    'prefix': 'unbound'
+    'description': 'unbound(variable)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_unbound'
+    'body': """
+      {{unbound ${1:variable}}}
+    """
+
+  'Ember Helper (unbound)':
+    'prefix': 'unbound-nested'
+    'description': 'unbound(variable)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_unbound'
+    'body': """
+      {{unbound ${1:variable}}}
+    """
+
+  'Ember Helper {{unless}}':
+    'prefix': 'unless'
+    'description': 'unless(value)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_unless'
+    'body': """
+      {{#unless ${1:value}}}
+        $2
+      {{/unless}}
+    """
+
+  'Ember Helper (unless)':
+    'prefix': 'unless-nested'
+    'description': 'unless(value)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_unless'
+    'body': """
+      (unless ${1:value} ${1:then})
+    """
+
+  'Ember Helper {{with}}':
+    'prefix': 'with'
+    'description': 'with(options)'
+    'descriptionMoreURL': 'http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_with'
+    'body': """
+      {{#with ${1:object} as |${2:alias}|}}
+        $3
+      {{/with}}
+    """
